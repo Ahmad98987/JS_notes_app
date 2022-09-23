@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <!-- Font Awesome CDN File Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+        <div class="modal-wrap">
+            <div class="close_wrap">
+                <span class="close_btn"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <h3>Add Note</h3>
+            <form id="add_note_form">
+                <input type="hidden" id="id" value="">
+                <label for="title">Title</label><br>
+                <input type="text" id="title" autocomplete="off">
+                <br>
+                <label for="description">Description</label>
+                <br>
+                <textarea id="description"></textarea>
+                <br>
+                <button class="create_btn">Save</button>
+            </form>
+            <span id="error"></span>
+            <span id="success"></span>
+        </div>
+    </div>
+    <!-- Modal -->
+    
+    <!-- Note -->
+    <div class="note_container"></div>
+
+    <!-- Add Button -->
+    <div class="add_btn"><i class="fa fa-plus"></i></div>
+
+    <!-- Main Js File Link -->
+    <script src="main.js"></script>
+
+</body>
+</html>
